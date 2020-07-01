@@ -1,0 +1,2 @@
+rootProject.name='Centro de Idiomas San Martín'
+include ':app'
