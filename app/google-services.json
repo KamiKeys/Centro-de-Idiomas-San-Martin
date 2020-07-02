@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "159884746809",
+    "firebase_url": "https://centro-de-idiomas-san-martin.firebaseio.com",
+    "project_id": "centro-de-idiomas-san-martin",
+    "storage_bucket": "centro-de-idiomas-san-martin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159884746809:android:cf2bdad6fbf9fa25ba6de8",
+        "android_client_info": {
+          "package_name": "com.javieramado.centrodeidiomassanmartn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159884746809-i2tg35f4ka9qi3shf11obbg5otmlcu8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9nmjWtlO4sgVKU5nI3set-O1tEix8Kn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159884746809-i2tg35f4ka9qi3shf11obbg5otmlcu8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
