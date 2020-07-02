@@ -36,12 +36,12 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         CarouselView carouselView = view.findViewById(R.id.carrusel);
-        carouselView.setPageCount(fotos.length);
         carouselView.setImageListener(new ImageListener() {
             @Override
             public void setImageForPosition(int position, ImageView imageView) {
                 imageView.setImageResource(fotos[position]);
             }
         });
+        carouselView.setPageCount(fotos.length);
     }
 }
