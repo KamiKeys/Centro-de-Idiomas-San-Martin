@@ -9,7 +9,8 @@
         android:id="@+id/nav_home"
         android:name="com.javieramado.centrodeidiomassanmartn.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+    </fragment>
     <fragment
         android:id="@+id/nav_horario"
         android:name="com.javieramado.centrodeidiomassanmartn.HorarioFragment"
@@ -25,5 +26,10 @@
         android:name="com.javieramado.centrodeidiomassanmartn.ContactoFragment"
         android:label="fragment_contacto"
         tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/action_autor"
+        android:name="com.javieramado.centrodeidiomassanmartn.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 
 </navigation>

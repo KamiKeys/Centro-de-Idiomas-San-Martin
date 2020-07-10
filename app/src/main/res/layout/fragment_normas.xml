@@ -13,9 +13,9 @@
         android:layout_height="111dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/photo_normas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/photo_normas" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgCambridge"
@@ -30,7 +30,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="513dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -50,14 +50,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/TituloNormas"
-                android:textStyle="bold"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:paddingTop="25dp"
                 android:id="@+id/txtInfoNormas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="25dp"
                 android:text="@string/Normas"
                 android:textStyle="bold" />
 
