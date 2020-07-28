@@ -13,22 +13,22 @@
     <fragment
         android:id="@+id/nav_horario"
         android:name="com.javieramado.centrodeidiomassanmartn.HorarioFragment"
-        android:label="fragment_horario"
+        android:label="@string/menu_horario"
         tools:layout="@layout/fragment_horario" />
     <fragment
         android:id="@+id/nav_normas"
         android:name="com.javieramado.centrodeidiomassanmartn.NormasFragment"
-        android:label="fragment_normas"
+        android:label="@string/menu_normas"
         tools:layout="@layout/fragment_normas" />
     <fragment
         android:id="@+id/nav_contacto"
         android:name="com.javieramado.centrodeidiomassanmartn.ContactoFragment"
-        android:label="fragment_contacto"
+        android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_contacto" />
     <fragment
         android:id="@+id/nav_autor"
         android:name="com.javieramado.centrodeidiomassanmartn.AboutFragment"
-        android:label="fragment_about"
+        android:label="@string/action_autor"
         tools:layout="@layout/fragment_about" />
 
 </navigation>
