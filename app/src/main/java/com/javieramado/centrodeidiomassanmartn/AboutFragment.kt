@@ -1,23 +1,16 @@
-package com.javieramado.centrodeidiomassanmartn;
+package com.javieramado.centrodeidiomassanmartn
 
-import android.os.Bundle;
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.vansuita.materialabout.builder.AboutBuilder
 
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.vansuita.materialabout.builder.AboutBuilder;
-import com.vansuita.materialabout.views.AboutView;
-
-public class AboutFragment extends Fragment {
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        AboutView vista = AboutBuilder.with(getContext())
+class AboutFragment : Fragment() {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        return AboutBuilder.with(context)
                 .setPhoto(R.mipmap.ic_perfildev_foreground)
                 .setCover(R.mipmap.ic_banner_foreground)
                 .setName("C. Javier Miguel Amado")
@@ -34,8 +27,6 @@ public class AboutFragment extends Fragment {
                 .setWrapScrollView(true)
                 .setLinksAnimated(true)
                 .setShowAsCard(true)
-                .build();
-
-        return vista;
+                .build()
     }
 }
