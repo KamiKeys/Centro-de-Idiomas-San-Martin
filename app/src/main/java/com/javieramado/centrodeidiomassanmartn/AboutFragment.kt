@@ -11,8 +11,8 @@ class AboutFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return AboutBuilder.with(context)
-                .setPhoto(R.mipmap.ic_perfildev_foreground)
-                .setCover(R.mipmap.ic_banner_foreground)
+                .setPhoto(R.drawable.perfil)
+                .setCover(R.drawable.bannerdev)
                 .setName("C. Javier Miguel Amado")
                 .setSubTitle("Android Developer")
                 .setAppIcon(R.mipmap.ic_launcher_round)

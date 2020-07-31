@@ -20,4 +20,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_grupo_SobreLaApp">Sobre la App</string>
+    <string name="title_activity_contacto">Map</string>
+    <string name="direccion">Dirección:</string>
+    <string name="tlf">Teléfono:</string>
+    <string name="correo">Correo:</string>
+    <string name="dir">Calle Tufa, 2C, 11340 \nSan Martín del Tesorillo, Cádiz</string>
+    <string name="tlfono">+34687062349</string>
+    <string name="correoEle">centrodeidiomassanmartin@hotmail.es</string>
 </resources>
