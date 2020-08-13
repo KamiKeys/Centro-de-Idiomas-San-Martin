@@ -8,10 +8,17 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 
 class MainActivity : AppCompatActivity() {
+
     private var mAppBarConfiguration: AppBarConfiguration? = null
     private val aboutFragment: AboutFragment? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,6 +34,14 @@ class MainActivity : AppCompatActivity() {
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration!!)
         NavigationUI.setupWithNavController(navigationView, navController)
+
+        // Remote Config
+        val ConfigSettings: FirebaseRemoteConfigSettings = remoteConfigSettings {
+            minimumFetchIntervalInSeconds = 10
+        }
+        val firebaseConfig: FirebaseRemoteConfig = Firebase.remoteConfig
+        firebaseConfig.setConfigSettingsAsync(ConfigSettings)
+        firebaseConfig.setDefaultsAsync(mapOf("imagen_horario" to ""))
     }
 
     /*

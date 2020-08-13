@@ -7,14 +7,20 @@ import android.animation.ObjectAnimator
 import android.graphics.Point
 import android.graphics.Rect
 import android.graphics.RectF
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import java.io.InputStream
+import java.net.URL
 
 class HorarioFragment : Fragment() {
 
@@ -30,15 +36,37 @@ class HorarioFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_horario, container, false)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        var d: Drawable? = null
+
         // Hook up clicks on the thumbnail views.
         val thumb1View: View = view.findViewById(R.id.thumb_button_1)
-        thumb1View.setOnClickListener({ zoomImageFromThumb(thumb1View, R.drawable.horario2021)
+
+        // Remote Config
+        Firebase.remoteConfig.fetchAndActivate().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val applyFoto: String = Firebase.remoteConfig.getString("imagen_horario")
+
+                Thread {
+                    try {
+                        val fotoInternet: InputStream = URL(applyFoto).getContent() as InputStream
+                        d = Drawable.createFromStream(fotoInternet, "src_name")
+                        activity?.runOnUiThread {
+                            thumb1View.setBackgroundDrawable(d)
+                        }
+                    } catch (e: Exception) {
+                        Toast.makeText(context, "No se ha podido mostrar el horario", Toast.LENGTH_SHORT).show()
+                    }
+                }.start()
+            }
+        }
+
+        thumb1View.setOnClickListener({
+            zoomImageFromThumb(thumb1View, d!!)
         })
 
         // Retrieve and cache the system's default "short" animation time.
@@ -47,14 +75,14 @@ class HorarioFragment : Fragment() {
 
     }
 
-    private fun zoomImageFromThumb(thumbView: View, imageResId: Int) {
+    private fun zoomImageFromThumb(thumbView: View, imageResId: Drawable) {
         // If there's an animation in progress, cancel it
         // immediately and proceed with this one.
         currentAnimator?.cancel()
 
         // Load the high-resolution "zoomed-in" image.
         val expandedImageView: ImageView = requireView().findViewById(R.id.expanded_image)
-        expandedImageView.setImageResource(imageResId)
+        expandedImageView.setImageDrawable(imageResId)
 
         // Calculate the starting and ending bounds for the zoomed-in image.
         // This step involves lots of math. Yay, math.
