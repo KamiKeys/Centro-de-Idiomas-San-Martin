@@ -8,19 +8,38 @@
     android:id="@+id/container"
     android:background="@android:color/white">
 
-    <ImageButton
-        android:id="@+id/thumb_button_1"
-        android:layout_width="250dp"
-        android:layout_height="225dp"
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/thumb_button_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtInfoHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/infoHorario"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/thumb_button_1"
+        android:layout_width="317dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- This initially-hidden ImageView will hold the expanded/zoomed version of
          the images above. Without transformations applied, it takes up the entire
@@ -34,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
+        android:background="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
