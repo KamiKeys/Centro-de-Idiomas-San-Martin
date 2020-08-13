@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Centro de Idiomas San Martín</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_contacto">Map</string>
+    <string name="tlfono">+34687062349</string>
+    <string name="correoEle">centrodeidiomassanmartin@hotmail.es</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_horario">Schedule</string>
+    <string name="menu_normas">Rules</string>
+    <string name="menu_contacto">Contact</string>
+    <string name="action_autor">Author</string>
+    <string name="action_contribuciones">Contributions</string>
+    <string name="TituloNormas">Rules</string>
+    <string name="menu_grupo_SobreLaApp">About the App</string>
+    <string name="direccion">Address:</string>
+    <string name="tlf">Telephone:</string>
+    <string name="correo">Mail:</string>
+    <string name="dir">2C, Tufa street, 11340 \nSan Martín del Tesorillo, Cádiz</string>
+    <string name="infoHome">San Martín Language Center is an English academy with more than 25 years of experience. \n\nWe work with pupils from 4 years old at preschool, primary and secondary education levels. We practice all language skills, such as, Reading, Writing, Listening and Speaking. \nWe offer personal attention, small groups and the best prices in our lessons. \nWe also take care of the privacy of all our students sice we are covered by the Personal Data Protection Law. \n\nWe are specialized in preparing for Cambridge exams (B1, B2). We get the best results and high percentages of pass rate achieved by our students. \nWe take care of registering our students for thei exams. \nWhenever possible, the staff of San Martín Language Center accompany the students on the day of the exam. We advice them and make the access to the facilities easier. \n\nInvest in your future, learn English and get the official Certification Cambridge English.</string>
+</resources>

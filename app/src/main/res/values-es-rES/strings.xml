@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Centro de Idiomas San Martín</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -6,7 +7,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Inicio</string>
     <string name="menu_horario">Horario</string>
     <string name="menu_normas">Normas</string>
@@ -14,17 +14,14 @@
     <string name="action_autor">Autor</string>
     <string name="action_contribuciones">Contribuciones</string>
     <string name="infoHome">Centro de Idiomas San Martín es una academia de inglés con más de 25 años de experiencia. \n\nTrabajamos con alumnos a partir de 4 años a niveles de educación infantil, primaria y secundaria. Practicamos todas las destrezas, Reading, Writing, Listening y Speaking. \nOfrecemos atención personalizada y grupos reducidos. Clases a los mejores precios. \nTambién cuidamos la privacidad de todos nuestros alumnos ya que estamos acogidos a la Ley de Protección de Datos (LOPD). \n\nSomos especialistas en la preparación de los exámenes de Cambridge (B1, B2) donde obtenemos óptimos resultados con alto nivel de aprobados. \nBuscamos la convocatoria que mejor se adapte a las necesidades del alumno, ya que se ofrecen varias convocatorias anuales. Nos encargamos de preparar su matriculación. \nSiempre que sea posible, el personal de Centro de Idiomas San Martín acompaña a sus alumnos el día del examen, asesorándolos y facilitándoles el acceso a las instalaciones. \n\nInvierte en tu futuro, aprende inglés y obtén una titulación oficial Cambridge English.</string>
-    <string name="Normas" translatable="false">⚫ Los alumnos se incorporarán a las clases en la fecha del inicio del curso para el correcto desarrollo del mismo. \n\n⚫ Se pide asiduidad y puntualidad a la asistencia de las clases. \n\n⚫ Centro de Idiomas San Martín se acoge al mismo calendario de festividad del C.E.I.P José Luís Sánchez y del I.E.S Azahar de San Martín del Tesorillo. \n\n⚫ Existe la posibilidad de cambios de días concretos recuperables en sábados por temas personales del profesorado en caso de ser necesario. \n\n⚫ Para el conocimiento de los precios, ponerse en contaco con la academia. Existen distintos precios según el nivel del curso. \n\n⚫ Con la primera cuota del curso se abonarán además 5€ por cada alumno/a de primaria y secundaria para gastos de fotocopias. Los alumnos de B1 y B2 abonarán 15€. \n\n⚫ Los pagos se abonarán entre los días 1 y 10 de cada més y no serán acumulables. \n\n⚫ Las cuotas corresponden a meses completos independientemente de si hay días festivos en algún mes.</string>
     <string name="TituloNormas">Normas</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_grupo_SobreLaApp">Sobre la App</string>
     <string name="title_activity_contacto">Map</string>
     <string name="direccion">Dirección:</string>
     <string name="tlf">Teléfono:</string>
     <string name="correo">Correo:</string>
-    <string name="dir">Calle Tufa, 2C, 11340 \nSan Martín del Tesorillo, Cádiz</string>
     <string name="tlfono">+34687062349</string>
     <string name="correoEle">centrodeidiomassanmartin@hotmail.es</string>
-    <string name="infoHorario" translatable="false">El comienzo del curso será a partir del 1 de Septiembre, cada grupo en su día y hora asignada según el horario. \nNuestra academia ha adopatado todas las medidas de seguridad recomendadas. Además del distanciamiento, se incorporarán pantallas de aislamiento en los pupitres.\n\n Las autoridades sanitarias recomiendan NO USAR el servicio (solo estará disponible en caso de emergencia), por eso se debe recordar a nuestros niños ir al baño en casa, antes de ir a clase.\nEl aula se desinfectará en cada cambio de grupo. Para ellos los alumnos saldrán 5 minutos antes, por lo que se pide puntualidad a los padres y madres de los más pequeños a la hora de la recogida.\nDel mismo modo se ruega que los alumnos que entran a clase sean puntuales, pero que no vengan con demasiada antelación para evitar aglomeraciones a la entrada y salida.</string>
+    <string name="dir">Calle Tufa, 2C, 11340 \nSan Martín del Tesorillo, Cádiz</string>
 </resources>
