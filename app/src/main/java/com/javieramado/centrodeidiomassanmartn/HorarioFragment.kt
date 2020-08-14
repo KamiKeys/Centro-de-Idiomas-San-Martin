@@ -66,7 +66,11 @@ class HorarioFragment : Fragment() {
         }
 
         thumb1View.setOnClickListener({
-            zoomImageFromThumb(thumb1View, d!!)
+            try {
+                zoomImageFromThumb(thumb1View, d!!)
+            } catch (e: Exception){
+                null
+            }
         })
 
         // Retrieve and cache the system's default "short" animation time.
