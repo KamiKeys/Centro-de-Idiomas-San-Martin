@@ -15,10 +15,11 @@ import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.zolad.zoominimageview.ZoomInImageViewAttacher
+import kotlinx.android.synthetic.main.fragment_horario.*
 import java.io.InputStream
 import java.net.URL
 
@@ -75,7 +76,6 @@ class HorarioFragment : Fragment() {
 
         // Retrieve and cache the system's default "short" animation time.
         shortAnimationDuration = resources.getInteger(android.R.integer.config_shortAnimTime)
-
 
     }
 
