@@ -13,5 +13,6 @@ ZoomInImageView | [https://github.com/zolad/ZoomInImageView](https://github.com/
 Firebase | [https://firebase.google.com/](https://firebase.google.com/)
 Crashlytics | [https://firebase.google.com/docs/crashlytics/get-started?authuser=0&platform=android](https://firebase.google.com/docs/crashlytics/get-started?authuser=0&platform=android)
 Remote Config | [https://firebase.google.com/docs/remote-config/?authuser=0](https://firebase.google.com/docs/remote-config/?authuser=0)
+Cloud Messaging | [https://firebase.google.com/docs/cloud-messaging/?authuser=0#implementation_paths](https://firebase.google.com/docs/cloud-messaging/?authuser=0#implementation_paths)
 ## License
 **Centro de Idiomas San Martin** is released under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License; see _LICENSE_ for further details.
