@@ -14,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.ktx.Firebase
@@ -42,6 +43,7 @@ class HorarioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val textoHorario = view.findViewById<TextView>(R.id.txtInfoHorario)
         var d: Drawable? = null
 
         // Hook up clicks on the thumbnail views.
@@ -50,6 +52,7 @@ class HorarioFragment : Fragment() {
         // Remote Config
         Firebase.remoteConfig.fetchAndActivate().addOnCompleteListener { task ->
             if (task.isSuccessful) {
+                val applyText: String = Firebase.remoteConfig.getString("texto_horario")
                 val applyFoto: String = Firebase.remoteConfig.getString("imagen_horario")
 
                 Thread {
@@ -57,10 +60,12 @@ class HorarioFragment : Fragment() {
                         val fotoInternet: InputStream = URL(applyFoto).getContent() as InputStream
                         d = Drawable.createFromStream(fotoInternet, "src_name")
                         activity?.runOnUiThread {
+                            if (!applyText.isEmpty())
+                                textoHorario.text = applyText
                             thumb1View.setBackgroundDrawable(d)
                         }
                     } catch (e: Exception) {
-                        Toast.makeText(context, "No se ha podido mostrar el horario", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Algo salió mal...", Toast.LENGTH_SHORT).show()
                     }
                 }.start()
             }

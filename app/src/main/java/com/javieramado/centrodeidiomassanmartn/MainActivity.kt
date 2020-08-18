@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
         val firebaseConfig: FirebaseRemoteConfig = Firebase.remoteConfig
         firebaseConfig.setConfigSettingsAsync(ConfigSettings)
-        firebaseConfig.setDefaultsAsync(mapOf("imagen_horario" to "https://firebasestorage.googleapis.com/v0/b/centro-de-idiomas-san-martin.appspot.com/o/HORARIO%2020-21.png?alt=media&token=9af94a16-0656-4f69-ae42-fb66c8467ebe"))
     }
 
     /*
