@@ -52,7 +52,7 @@ class HorarioFragment : Fragment() {
         // Remote Config
         Firebase.remoteConfig.fetchAndActivate().addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                val applyText: String = Firebase.remoteConfig.getString("texto_horario")
+                val applyText: String = Firebase.remoteConfig.getString("texto_horario").replace("\\n", "\n")
                 val applyFoto: String = Firebase.remoteConfig.getString("imagen_horario")
 
                 Thread {
