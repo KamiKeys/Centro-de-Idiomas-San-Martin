@@ -24,4 +24,5 @@
     <string name="tlfono">+34687062349</string>
     <string name="correoEle">centrodeidiomassanmartin@hotmail.es</string>
     <string name="dir">Calle Tufa, 2C, 11340 \nSan Martín del Tesorillo, Cádiz</string>
+    <string name="menu_covid">Medidas COVID</string>
 </resources>

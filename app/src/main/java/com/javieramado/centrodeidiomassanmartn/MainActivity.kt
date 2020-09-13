@@ -8,6 +8,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
         // Passing each menu ID as a set of Ids because each
 // menu should be considered as top level destinations.
-        mAppBarConfiguration = AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_horario, R.id.nav_normas, R.id.nav_contacto)
+        mAppBarConfiguration = AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_horario, R.id.nav_normas, R.id.nav_covid, R.id.nav_contacto)
                 .setDrawerLayout(drawer)
                 .build()
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)

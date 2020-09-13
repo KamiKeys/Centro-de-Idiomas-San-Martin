@@ -11,8 +11,8 @@ android {
         applicationId "com.javieramado.centrodeidiomassanmartn"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 6
-        versionName "1.2.3"
+        versionCode 7
+        versionName "1.2.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,7 +46,7 @@ dependencies {
     implementation "androidx.core:core-ktx:+"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
     implementation 'com.google.firebase:firebase-messaging:20.2.1'
-    implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:17.2.1'
     implementation 'com.google.firebase:firebase-config-ktx:19.2.0'
     implementation 'com.zolad:zoominimageview:1.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

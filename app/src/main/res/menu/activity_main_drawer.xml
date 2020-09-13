@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_content_paste_black_24dp"
             android:title="@string/menu_normas" />
         <item
+            android:id="@+id/nav_covid"
+            android:icon="@drawable/ic_wc_black_24dp"
+            android:title="@string/menu_covid" />
+        <item
             android:id="@+id/nav_contacto"
             android:icon="@drawable/ic_person_pin_circle_black_24dp"
             android:title="@string/menu_contacto" />
